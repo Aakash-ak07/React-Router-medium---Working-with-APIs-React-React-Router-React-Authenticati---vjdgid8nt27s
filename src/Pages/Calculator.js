@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export const Calculator = () =>{
+export const Calculator = () => {
     let url_string = window.location.href;
     var url = new URL(url_string);
     var num1 = Number(url.searchParams.get("num1"))
@@ -32,7 +32,7 @@ export const Calculator = () =>{
             break;
         }
     }
-    return(
+    return (
         <div>
             Your calculation Result is <span id="calc-result">{ans}</span>
         </div>
